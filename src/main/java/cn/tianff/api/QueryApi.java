@@ -1,5 +1,7 @@
 package cn.tianff.api;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/cache/api")
 public class QueryApi {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(QueryApi.class);
 
 
     @GetMapping("/object/{Key}")

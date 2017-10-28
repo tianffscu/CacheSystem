@@ -16,6 +16,7 @@ public class HashCacheWrapper<E> extends CachedObject<E> {
     public HashCacheWrapper(String cacheKey, E wrappedObj) {
         super(cacheKey, wrappedObj);
 
+        this.cacheType = CACHE_TYPE_HASH;
     }
 
     @Override

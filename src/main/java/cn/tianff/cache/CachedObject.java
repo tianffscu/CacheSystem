@@ -13,6 +13,8 @@ public abstract class CachedObject<E> {
 
     protected transient E wrappedObj;
 
+    protected transient int cacheType;
+
     protected CachedObject(String cacheKey, E wrappedObj) {
         this.cacheKey = cacheKey;
         this.wrappedObj = wrappedObj;
