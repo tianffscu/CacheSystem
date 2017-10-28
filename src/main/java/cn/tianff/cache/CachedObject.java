@@ -43,4 +43,12 @@ public abstract class CachedObject<E> {
         return wrappedObj;
     }
 
+
+    @Override
+    public String toString() {
+        return "CachedObject{" +
+                "cacheKey='" + cacheKey + '\'' +
+                ", wrappedObj=" + wrappedObj +
+                '}';
+    }
 }
