@@ -9,7 +9,7 @@ public abstract class CachedObject<E> {
     protected static final int CACHE_TYPE_HASH = 1;
     protected static final int CACHE_TYPE_SERIAL = 2;
 
-    protected String cacheKey;
+    protected transient String cacheKey;
 
     protected transient E wrappedObj;
 

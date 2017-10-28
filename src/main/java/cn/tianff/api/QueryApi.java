@@ -68,7 +68,7 @@ public class QueryApi {
 
     @GetMapping("/object")
     public Object getAll() {
-        return cacheMap;
+        return defaultJsonParser.toJson(cacheMap);
     }
 
     @PostMapping("/object")
