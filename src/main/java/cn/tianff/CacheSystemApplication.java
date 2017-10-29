@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CachesystemApplication {
+public class CacheSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CachesystemApplication.class, args);
+		SpringApplication.run(CacheSystemApplication.class, args);
 	}
 }

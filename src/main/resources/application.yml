@@ -1,0 +1,11 @@
+server:
+  address:
+  port: 8080
+
+spring:
+  profiles:
+    active: local
+
+  redis:
+    host: 139.199.176.126
+    port: 6379

@@ -1,6 +1,7 @@
 package cn.tianff.cache;
 
 import cn.tianff.util.ClassUtil;
+import org.springframework.data.redis.core.RedisHash;
 
 import java.util.Map;
 
@@ -9,10 +10,13 @@ import java.util.Map;
  * Using HashMap to hold content object
  * Created by Tianff on 2017/10/28.
  */
+@RedisHash(timeToLive = 1800)
 public class HashCacheWrapper<E> extends CachedObject<E> {
 
     private Map<String, Object> contentFieldMap;
 
+
+    //FIXME : change logic to reflect getting the cacheKey!
     public HashCacheWrapper(String cacheKey, E wrappedObj) {
         super(cacheKey, wrappedObj);
 

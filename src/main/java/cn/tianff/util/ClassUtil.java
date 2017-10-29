@@ -1,6 +1,5 @@
 package cn.tianff.util;
 
-import cn.tianff.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -79,17 +78,4 @@ public class ClassUtil {
         }
     }
 
-
-    public static void main(String[] args) {
-        Test t = new Test("Haha", 122);
-
-        Map<String, Object> map = getFieldMap(t);
-
-        System.out.println(map);
-
-        Test deT = getObjectFromFieldMap(map, Test.class);
-
-        System.out.println(t.toString().equals(deT.toString()));
-        System.out.println(deT);
-    }
 }

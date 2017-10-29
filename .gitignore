@@ -29,4 +29,10 @@ mvnw
 mvnw.cmd
 
 ### Test ###
-src/main/test
+src/test
+
+### Private config ###
+application-local.yml
+src/main/resources/static/
+src/main/resources/templates/
+/.gitignore
